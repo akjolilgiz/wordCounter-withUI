@@ -19,6 +19,7 @@ _None._
 
 ## Support and contact details
 * akjolilgiz@gmail.com
+* https://github.com/akjolilgiz/wordCounter
 
 ## Specs
 |#|Spec Description|Input|Expected Output|
