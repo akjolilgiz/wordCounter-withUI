@@ -32,23 +32,22 @@ namespace WordCounter.Tests
       //Assert
       Assert.AreEqual(updatedWord, result);
     }
-    // [TestMethod]
-    // public void SplitSentence_SplitSentence_String()
-    // {
-    //   //arrange
-    //   string sentence = "I ate an orange";
-    //   RepeatCounter newRepeatCounter = new RepeatCounter(sentence);
-    //
-    //
-    //   //act
-    //   string[] result = newRepeatCounter.SplitSentence();
-    //
-    //
-    //   //Assert
-    //   CollectionAssert.AreEqual(result, "I", "ate", "an", "orange");
-    //
-    //
-    // }
+    [TestMethod]
+    public void SplitSentence_SplitSentence_String()
+    {
+      //arrange
+      RepeatCounter newRepeatCounter = new RepeatCounter("orange", "I ate an orange");
+      string[] newString = {"I", "ate", "an", "orange"};
+
+      //act
+      string[] result = newRepeatCounter.SplitSentence();
+
+
+      //Assert
+      CollectionAssert.AreEqual(result, newString);
+
+
+    }
 
   }
 }
