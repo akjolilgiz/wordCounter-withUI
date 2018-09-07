@@ -10,30 +10,46 @@ namespace WordCounter.Tests
     public void GetWord_ReturnsWord_String()
     {
       //Arrange
-      string word = "orange";
-      RepeatCounter newRepeatCounter = new RepeatCounter(word);
+      RepeatCounter newRepeatCounter = new RepeatCounter("orange", "apple");
 
       //Act
       string result = newRepeatCounter.GetWord();
 
       //Assert
-      Assert.AreEqual(word, result);
+      Assert.AreEqual("orange", result);
     }
-    [TestMethod]
-    public void SetWord_SetsWord_String()
-    {
-      //arrange
-      string word = "orange";
-      RepeatCounter newRepeatCounter = new RepeatCounter(word);
-
-      //act
-      string updatedWord = "apple";
-      newRepeatCounter.SetWord(updatedWord);
-      string result = newRepeatCounter.GetWord();
-
-      //Assert
-      Assert.AreEqual(updatedWord, result);
-    }
+    // [TestMethod]
+    // public void SetWord_SetsWord_String()
+    // {
+    //   //arrange
+    //   string word = "orange";
+    //   RepeatCounter newRepeatCounter = new RepeatCounter(word);
+    //
+    //   //act
+    //   string updatedWord = "apple";
+    //   newRepeatCounter.SetWord(updatedWord);
+    //   string result = newRepeatCounter.GetWord();
+    //
+    //   //Assert
+    //   Assert.AreEqual(updatedWord, result);
+    // }
+    // [TestMethod]
+    // public void SplitSentence_SplitSentence_String()
+    // {
+    //   //arrange
+    //   string sentence = "I ate an orange";
+    //   RepeatCounter newRepeatCounter = new RepeatCounter(sentence);
+    //
+    //
+    //   //act
+    //   string[] result = newRepeatCounter.SplitSentence();
+    //
+    //
+    //   //Assert
+    //   CollectionAssert.AreEqual(result, "I", "ate", "an", "orange");
+    //
+    //
+    // }
 
   }
 }
