@@ -1,23 +1,24 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using WordCounter;
 
-namespace ToDoList.Tests
+namespace WordCounter.Tests
 {
   [TestClass]
-  public class ItemTest
+  public class RepeatCounterTests
   {
     [TestMethod]
-    public void GetDescription_ReturnsDescription_String()
+    public void GetWord_ReturnsWord_String()
     {
       //Arrange
-      string description = "Walk the dog.";
-      Item newItem = new Item(description);
+      string word = "orange";
+      RepeatCounter newRepeatCounter = new RepeatCounter(word);
 
       //Act
-      string result = newItem.GetDescription();
+      string result = newRepeatCounter.GetWord();
 
       //Assert
-      Assert.AreEqual(description, result);
+      Assert.AreEqual(word, result);
     }
+
   }
 }
