@@ -18,21 +18,20 @@ namespace WordCounter.Tests
       //Assert
       Assert.AreEqual("orange", result);
     }
-    // [TestMethod]
-    // public void SetWord_SetsWord_String()
-    // {
-    //   //arrange
-    //   string word = "orange";
-    //   RepeatCounter newRepeatCounter = new RepeatCounter(word);
-    //
-    //   //act
-    //   string updatedWord = "apple";
-    //   newRepeatCounter.SetWord(updatedWord);
-    //   string result = newRepeatCounter.GetWord();
-    //
-    //   //Assert
-    //   Assert.AreEqual(updatedWord, result);
-    // }
+    [TestMethod]
+    public void SetWord_SetsWord_String()
+    {
+      //arrange
+      RepeatCounter newRepeatCounter = new RepeatCounter("orange", "apple");
+
+      //act
+      string updatedWord = "watermelon";
+      newRepeatCounter.SetWord(updatedWord);
+      string result = newRepeatCounter.GetWord();
+
+      //Assert
+      Assert.AreEqual(updatedWord, result);
+    }
     // [TestMethod]
     // public void SplitSentence_SplitSentence_String()
     // {
