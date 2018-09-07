@@ -45,8 +45,21 @@ namespace WordCounter.Tests
 
       //Assert
       CollectionAssert.AreEqual(result, newString);
+    }
+    [TestMethod]
+    public void Count_GetTheAmountOfCount_int()
+    {
+      //arrange
+      string word = "orange";
+      string sentence = "I ate orange and orange and more orange";
+      RepeatCounter newCount = new RepeatCounter(word, sentence);
 
+      //Assert
 
+      int number = newCount.Count();
+      // Assert
+
+      Assert.AreEqual(number, 3);
     }
 
   }
