@@ -34,7 +34,7 @@ namespace WordCounter
             });
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("Welcome to RepeatCounter");
             });
             app.UseDeveloperExceptionPage();
         }
