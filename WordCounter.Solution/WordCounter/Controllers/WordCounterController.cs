@@ -25,8 +25,11 @@ namespace WordCounter.Controllers
         public ActionResult Create()
         {
             RepeatCounter newCount = new RepeatCounter(Request.Form["word"], Request.Form["sentence"]);
+            int countNumber = newCount.Count();
+            newCount.SetCount(countNumber);
 
-            return RedirectToAction("Index");
+
+            return View("Index", newCount);
         }
     }
 }

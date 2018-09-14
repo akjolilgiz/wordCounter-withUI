@@ -8,6 +8,7 @@ namespace WordCounter.Models
   {
     private string _word;
     private string _sentence;
+    private int _count;
 
     public RepeatCounter (string word, string sentence)
     {
@@ -32,21 +33,28 @@ namespace WordCounter.Models
       string[] splitSentence = _sentence.Split(' ');
       return splitSentence;
     }
+    public int GetCount()
+    {
+      return _count;
+    }
+    public void SetCount(int newCount)
+    {
+      _count = newCount;
+    }
     public int Count()
     {
-      int counts = 0;
+      int count = 0;
       // string[] splitSentence = SplitSentence();
       foreach(string words in SplitSentence())
       {
         if (words.Equals(_word))
         {
-          counts ++;
+          count ++;
         }
       }
 
-       return counts;
+       return count;
     }
-
 
   }
 }
