@@ -11,9 +11,9 @@ namespace WordCounter.Controllers
         [HttpGet("/repeatCounter")]
         public ActionResult Index()
         {
-          return View();
+          List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
+          return View(allRepeatCounters);
         }
-
 
         [HttpGet("/repeatCounter/new")]
         public ActionResult CreateForm()

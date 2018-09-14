@@ -9,14 +9,16 @@ namespace WordCounter.Models
     private string _word;
     private string _sentence;
     private int _count;
-    // public static List<RepeatCounter> _instances = new List<RepeatCounter>{};
+    private int _id;
+    private static List<RepeatCounter> _instances = new List<RepeatCounter>{};
 
     public RepeatCounter (string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
       // _count = count;
-      // _instances.Add(this);
+      _id = _instances.Count;
+      _instances.Add(this);
     }
     public string GetWord()
     {
@@ -30,10 +32,21 @@ namespace WordCounter.Models
     {
       return _sentence;
     }
+    public void SetSentence(string newSentence)
+    {
+      _sentence = newSentence;
+    }
     public string[] SplitSentence()
     {
-
-      string[] splitSentence = _sentence.Split(' ');
+      string newString = "";
+      foreach(char symbol in _sentence)
+      {
+        if (!char.IsPunctuation(symbol))
+        {
+          newString +=symbol;
+        }
+      }
+      string[] splitSentence = newString.Split(' ');
       return splitSentence;
     }
     public int GetCount()
@@ -57,6 +70,18 @@ namespace WordCounter.Models
       }
 
        return count;
+    }
+    public static List<RepeatCounter>GetAll()
+    {
+      return _instances;
+    }
+    public int GetId()
+    {
+      return _id;
+    }
+    public static RepeatCounter Find(int searchId)
+    {
+      return _instances[searchId-1];
     }
 
   }
