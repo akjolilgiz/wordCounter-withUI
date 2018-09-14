@@ -19,7 +19,7 @@ _None._
 
 ## Support and contact details
 * akjolilgiz@gmail.com
-* https://github.com/akjolilgiz/wordCounter
+* https://github.com/akjolilgiz/wordCounter-withUI/tree/master/WordCounter.Solution
 
 ## Specs
 |#|Spec Description|Input|Expected Output|
@@ -41,6 +41,7 @@ _None._
 * Mono
 * GitHub
 * Atom
+* Csharp
 
 ### License
 
