@@ -9,12 +9,14 @@ namespace WordCounter.Models
     private string _word;
     private string _sentence;
     private int _count;
+    // public static List<RepeatCounter> _instances = new List<RepeatCounter>{};
 
-    public static List<RepeatCounter> _instances List<RepeatCounter>
     public RepeatCounter (string word, string sentence)
     {
       _word = word;
       _sentence = sentence;
+      // _count = count;
+      // _instances.Add(this);
     }
     public string GetWord()
     {
