@@ -1,0 +1,9 @@
+<h1>Word Counter List of Searches</h1>
+<ul>
+<h1>Here is the list of previous searches!</h1>
+  @foreach(var item in Model)
+  {
+  <li>The word "@item.GetWord()" was searched in a sentence "@item.GetSentence()" @item.Count() times!</li>
+  }
+</ul>
+<a href="/repeatCounter/new">Play again.</a>

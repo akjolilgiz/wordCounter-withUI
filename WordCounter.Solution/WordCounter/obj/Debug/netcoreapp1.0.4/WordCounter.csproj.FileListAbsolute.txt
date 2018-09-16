@@ -6,3 +6,12 @@
 /Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.AssemblyInfo.cs
 /Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.dll
 /Users/Guest/Desktop/wordCounter/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.pdb
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0.4/WordCounter.deps.json
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0.4/WordCounter.runtimeconfig.json
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0.4/WordCounter.runtimeconfig.dev.json
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.csproj.CoreCompileInputs.cache
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.AssemblyInfo.cs
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.dll
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/obj/Debug/netcoreapp1.0.4/WordCounter.pdb
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0.4/WordCounter.dll
+/Users/akjoljaenbai/Desktop/wordCounter-withUI/WordCounter.Solution/WordCounter/bin/Debug/netcoreapp1.0.4/WordCounter.pdb

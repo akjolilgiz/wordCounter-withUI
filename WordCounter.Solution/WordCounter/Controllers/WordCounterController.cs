@@ -8,12 +8,12 @@ namespace WordCounter.Controllers
     public class RepeatCounterController : Controller
     {
 
-        [HttpGet("/repeatCounter")]
-        public ActionResult Index()
-        {
-          List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
-          return View(allRepeatCounters);
-        }
+        // [HttpGet("/repeatCounter")]
+        // public ActionResult Index()
+        // {
+        //   List<RepeatCounter> allRepeatCounters = RepeatCounter.GetAll();
+        //   return View(allRepeatCounters);
+        // }
 
         [HttpGet("/repeatCounter/new")]
         public ActionResult CreateForm()
@@ -31,5 +31,12 @@ namespace WordCounter.Controllers
 
             return View("Index", newCount);
         }
+
+        [HttpGet("/repeatCounter/list")]
+            public ActionResult List()
+            {
+                List<RepeatCounter> newList = RepeatCounter.GetAll();
+                return View(newList);
+            }
     }
 }
